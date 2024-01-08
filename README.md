@@ -1,275 +1,318 @@
-# 🚀 AstroWind
+<!-- Heading of Template -->
+<h1>
+  <a href="https://nextkit-nuxtjs-free-uikit.vercel.app/">Next Kit - Nuxt js based Free UI Kit</a>
+</h1>
 
-<img src="https://raw.githubusercontent.com/onwidget/.github/main/resources/astrowind/lighthouse-score.png" align="right"
-     alt="AstroWind Lighthouse Score" width="100" height="358">
+<!-- Main image of Template -->
+<a target="_blank" href="https://nextkit-nuxtjs-free-uikit.vercel.app/">
+  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2021/09/nuxtjs-free-ui-kit.jpg" />
+</a>
 
-🌟 _Most *starred* & *forked* Astro theme in 2022_. 🌟
+Next Kit Vuejs is Free NuxtJs Vuetify Website Template. It allows you to create stunning websites, landing pages, coming soon pages, homepages and more. It comes with ready to use UI Blocks & Elements to help level up the design and aesthetics of your project. Next Kit is built on Vuetify framework, which is a responsive Vuejs Framework.
 
-**AstroWind** is a free and open-source template to make your website using **[Astro 3.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/)**. Ready to start a new project and designed taking into account web best practices.
+## What do I get bundled with Free Version?
 
-- ✅ **Production-ready** scores in **PageSpeed Insights** reports.
-- ✅ Integration with **Tailwind CSS** supporting **Dark mode** and **_RTL_**.
-- ✅ **Fast and SEO friendly blog** with automatic **RSS feed**, **MDX** support, **Categories & Tags**, **Social Share**, ...
-- ✅ **Image Optimization** (using new **Astro Assets** and **Unpic** for Universal image CDN).
-- ✅ Generation of **project sitemap** based on your routes.
-- ✅ **Open Graph tags** for social media sharing.
-- ✅ **Analytics** built-in Google Analytics, and Splitbee integration.
+The free version of NextKit Nuxtjs UI Kit Lite provides you with a library consisting of:
 
-<br>
+<ul>
+<li>17+ readymade UI Blocks</li>
+<li>25 essential UI elements</li>
+<li>Vuetify Enabled Framework</li>
+<li>Unlimited Google Web Fonts</li>
+<li>Retina Ready templates</li>
+<li>SCSS Base CSS framework</li>
+<li>One-level dropdown menus</li>
+<li>Search Engine Optimized Code that enhances your web application's SEO score</li>
+<li>Lightning-fast performance</li>
+</ul>
 
-<img src="https://raw.githubusercontent.com/onwidget/.github/main/resources/astrowind/screenshot-astro3.png" alt="AstroWind Theme Screenshot">
+## Build Setup
 
-[![onWidget](https://custom-icon-badges.demolab.com/badge/made%20by%20-onWidget-556bf2?style=flat-square&logo=onwidget&logoColor=white&labelColor=101827)](https://onwidget.com)
-[![License](https://img.shields.io/github/license/onwidget/astrowind?style=flat-square&color=dddddd&labelColor=000000)](https://github.com/onwidget/astrowind/blob/main/LICENSE.md)
-[![Maintained](https://img.shields.io/badge/maintained%3F-yes-brightgreen.svg?style=flat-square)](https://github.com/onwidget)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/onwidget/astrowind#contributing)
-[![Known Vulnerabilities](https://snyk.io/test/github/onwidget/astrowind/badge.svg?style=flat-square)](https://snyk.io/test/github/onwidget/astrowind)
-[![Stars](https://img.shields.io/github/stars/onwidget/astrowind.svg?style=social&label=stars&maxAge=86400&color=ff69b4)](https://github.com/onwidget/astrowind)
-[![Forks](https://img.shields.io/github/forks/onwidget/astrowind.svg?style=social&label=forks&maxAge=86400&color=ff69b4)](https://github.com/onwidget/astrowind)
+```bash
+# install dependencies
+$ npm install
 
-<br>
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-<details open>
-<summary>Table of Contents</summary>
+# build for production and launch server
+$ npm run build
+$ npm run start
 
-- [Demo](#demo)
-- [Getting started](#getting-started)
-  - [Project structure](#project-structure)
-  - [Commands](#commands)
-  - [Configuration](#configuration)
-  - [Deploy](#deploy)
-- [Frequently Asked Questions](#frequently-asked-questions)
-- [Related Projects](#related-projects)
-- [Contributing](#contributing)
-- [Acknowledgements](#acknowledgements)
-- [License](#license)
-
-</details>
-
-<br>
-
-## Demo
-
-📌 [https://astrowind.vercel.app/](https://astrowind.vercel.app/)
-
-<br>
-
-## Getting started
-
-**AstroWind** tries to give you quick access to creating a website using [Astro 3.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/). It's a free theme which focuses on simplicity, good practices and high performance.
-
-Very little vanilla javascript is used only to provide basic functionality so that each developer decides which framework (React, Vue, Svelte, Solid JS...) to use and how to approach their goals..
-
-### Project structure
-
-Inside AstroWind template, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   ├── _headers
-│   └── robots.txt
-├── src/
-│   ├── assets/
-│   │   ├── favicons/
-│   │   ├── images/
-│   │   └── styles/
-│   │       └── tailwind.css
-│   ├── components/
-│   │   ├── blog/
-│   │   ├── common/
-│   │   ├── ui/
-│   │   ├── widgets/
-│   │   │   ├── Header.astro
-│   │   │   └── ...
-│   │   ├── CustomStyles.astro
-│   │   ├── Favicons.astro
-│   │   └── Logo.astro
-│   ├── content/
-│   │   ├── post/
-│   │   │   ├── post-slug-1.md
-│   │   │   ├── post-slug-2.mdx
-│   │   │   └── ...
-│   │   └-- config.ts
-│   ├── layouts/
-│   │   ├── Layout.astro
-│   │   ├── MarkdownLayout.astro
-│   │   └── PageLayout.astro
-│   ├── pages/
-│   │   ├── [...blog]/
-│   │   │   ├── [category]/
-│   │   │   ├── [tag]/
-│   │   │   ├── [...page].astro
-│   │   │   └── index.astro
-│   │   ├── index.astro
-│   │   ├── 404.astro
-│   │   ├-- rss.xml.ts
-│   │   └── ...
-│   ├── utils/
-│   ├── config.yaml
-│   └── navigation.js
-├── package.json
-├── astro.config.mjs
-└── ...
+# generate static project
+$ npm run generate
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Special Directories
 
-Any static assets, like images, can be placed in the `public/` directory if they do not require any transformation or in the `assets/` directory if they are imported directly.
+You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+
+### `assets`
+
+The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+
+### `components`
+
+The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+
+### `layouts`
+
+Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
 
 
-[![Edit AstroWind on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/onwidget/astrowind/tree/main)  [![Open in Gitpod](https://svgshare.com/i/xdi.svg)](https://gitpod.io/?on=gitpod#https://github.com/onwidget/astrowind)  [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/onwidget/astrowind)   
+### `pages`
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file `README.md`. Update `src/config.yaml` and contents. Have fun!
+This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
 
-<br>
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
 
-### Commands
+### `plugins`
 
-All commands are run from the root of the project, from a terminal:
+The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
 
-| Command               | Action                                             |
-| :-------------------- | :------------------------------------------------- |
-| `npm install`         | Installs dependencies                              |
-| `npm run dev`         | Starts local dev server at `localhost:3000`        |
-| `npm run build`       | Build your production site to `./dist/`            |
-| `npm run preview`     | Preview your build locally, before deploying       |
-| `npm run format`      | Format codes with Prettier                         |
-| `npm run lint:eslint` | Run Eslint                                         |
-| `npm run astro ...`   | Run CLI commands like `astro add`, `astro preview` |
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
 
-<br>
+### `static`
 
-### Configuration
+This directory contains your static files. Each file inside this directory is mapped to `/`.
 
-Basic configuration file: `./src/config.yaml`
+Example: `/static/robots.txt` is mapped as `/robots.txt`.
 
-```yaml
-site:
-  name: 'Example'
-  site: 'https://example.com'
-  base: '/' # Change this if you need to deploy to Github Pages, for example
-  trailingSlash: false # Generate permalinks with or without "/" at the end
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
 
-  googleSiteVerificationId: false # Or some value,
+### `store`
 
-# Default SEO metadata
-metadata:
-  title:
-    default: 'Example'
-    template: '%s — Example'
-  description: 'This is the default meta description of Example website'
-  robots:
-    index: true
-    follow: true
-  openGraph:
-    site_name: 'Example'
-    images:
-      - url: '~/assets/images/default.jpg'
-        width: 1200
-        height: 628
-    type: website
-  twitter:
-    handle: '@twitter_user'
-    site: '@twitter_user'
-    cardType: summary_large_image
+This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
-i18n:
-  language: en
-  textDirection: ltr
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
 
-apps:
-  blog:
-    isEnabled: true
-    postsPerPage: 6
+<!-- Resources of Template -->
+<h2>Resources</h2>
+<ul>
+<li>  
+  Live Demo: <a href="https://nextkit-nuxtjs-free-uikit.vercel.app/" rel="nofollow">https://nextkit-nuxtjs-free-uikit.vercel.app/</a>
+</li>
+<li>
+    Download Page: <a href="https://www.wrappixel.com/templates/nextkit-nuxtjs-free-uikit/" rel="nofollow">
+  https://www.wrappixel.com/templates/nextkit-nuxtjs-free-uikit/</a>
+</li>
+<li>
+    <a href="https://www.wrappixel.com/templates/wrapkit/#demos" rel="nofollow">WrapKit </a>Complete UI Kit - For Website Projects
+</li>
+</ul>
 
-    post:
-      isEnabled: true
-      permalink: '/blog/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
-      robots:
-        index: true
+<!-- Free and Premium Templates -->
+<h2>Free and Premium Templates</h2>
+<!-- Ui Kits  -->
+<table>
+  <thead>
+<tr>
+<th>Wrapkit Bootstrap</th>
+<th>Nextkit – Nextjs Free UI Kit</th>
+<th>WrapKit React Lite UI Kit</th>
+</tr>
+</thead>
+  <tbody>
+     <tr>
+      <td>
+        <a href="https://www.wrappixel.com/templates/wrapkit/" rel="nofollow" width="150px">
+          <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/06/wrapkit-complete-ui-kit-y-20.jpg" alt="Wrapkit Bootstrap" style="max-width:150px;">
+        </a>
+      </td> 
+      <td>
+        <a href="https://www.wrappixel.com/templates/nextkit-nextjs-free-uikit/" rel="nofollow" width="150px">
+          <img src="https://www.wrappixel.com/wp-content/uploads/edd/2021/09/nextkit-nextjs-free-uikit.jpg" alt="Nextkit – Nextjs Free UI Kit" style="max-width:150px;">
+        </a>
+      </td> 
+      <td>
+        <a href="https://www.wrappixel.com/templates/wrapkit-react-lite/" rel="nofollow" width="150px">
+          <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/wrapkit-react-lite-y.jpg" alt="WrapKit React Lite UI Kit" style="max-width:150px;">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- bootstrap premium dashboards -->
+<table>
+<thead>
+<tr>
+<th>MaterialPro Bootstrap Admin</th>
+<th>Ample Bootstrap Admin</th>
+<th>Monster Bootstrap Admin</th>
+<th>AdminPro Bootstrap Theme</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+  <a href="https://www.wrappixel.com/templates/materialpro/" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-bootstrap-admin-y.jpg" alt="Material pro Bootstrap" style="max-width:150px;">
+  </a>
+</td>
+<td>
+  <a href="https://www.wrappixel.com/templates/ampleadmin/" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/ample-admin-bootstrap-y.jpg" alt="Ample Bootstrap Admin" style="max-width:150px;">
+  </a>
+</td>
+<td>
+  <a href="https://www.wrappixel.com/templates/monsteradmin/" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/monster-bootstrap-admin-y.jpg" alt="Monster Bootstrap Admin" style="max-width:150px;">
+  </a>
+</td>
+  <td>
+  <a href="https://www.wrappixel.com/templates/adminpro/" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/adminpro-bootstrap-admin-template-y.jpg" alt="AdminPro Bootstrap Theme" style="max-width:150px;">
+  </a>
+</td>
+</tr>
+</tbody>
+</table>
 
-    list:
-      isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
-      robots:
-        index: true
+<!-- angular premium dashboards -->
+<table>
+<thead>
+<tr>
+<th>MaterialPro Angular Admin</th>
+<th>Ample Admin Angular</th>
+<th>Monster Angular Admin</th>
+<th>AdminPro Angular Admin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+  <a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-angular-admin-y.jpg" alt="MaterialPro Angular 11 Admin" style="max-width:150px;">
+  </a>
+</td>
+<td>
+  <a href="https://www.wrappixel.com/templates/ample-admin-angular/" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/ample-admin-angular-y.jpg" alt="Ample Angular Admin" style="max-width:150px;">
+  </a>
+</td>
+<td>
+  <a href="https://www.wrappixel.com/templates/monster-angular-dashboard/" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/monster-angular-admin-y.jpg" alt="Monster Angular Admin" style="max-width:150px;">
+  </a>
+</td>
+  <td>
+  <a href="https://www.wrappixel.com/templates/adminpro-angular-dashboard/" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/adminpro-angular-dashboard-y.jpg" alt="AdminPro Angular Theme" style="max-width:150px;">
+  </a>
+</td>
+</tr>
+</tbody>
+</table>
 
-    category:
-      isEnabled: true
-      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
-      robots:
-        index: true
+<!-- react premium dashboards -->
+<table>
+<thead>
+<tr>
+<th>MaterialPro React Admin</th>
+<th>Ample React Admin</th>
+<th>Monster React Admin</th>
+<th>AdminPro React Admin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+  <a href="https://www.wrappixel.com/templates/materialpro-react-redux-admin/" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-react-admin-y.jpg" alt="MaterialPro React Redux Admin" style="max-width:150px;">
+  </a>
+</td>
+<td>
+  <a href="https://www.wrappixel.com/templates/ample-react-dashboard/" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/09/ample-react-admin-template-y.png" alt="Ample React Admin" style="max-width:150px;">
+  </a>
+</td>
+<td>
+  <a href="https://www.wrappixel.com/templates/monster-react-admin/" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/06/monster-react-admin-template-y-20.jpg" alt="Monster React Admin" style="max-width:150px;">
+  </a>
+</td>
+  <td>
+  <a href="https://www.wrappixel.com/templates/adminpro-react-redux-admin/" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/adminpro-react-dashboard-y.jpg" alt="AdminPro React Theme" style="max-width:150px;">
+  </a>
+</td>
+</tr>
+</tbody>
+</table>
 
-    tag:
-      isEnabled: true
-      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
-      robots:
-        index: false
+<!-- vuejs premium dashboards -->
+<table>
+<thead>
+<tr>
+<th>MaterialPro Vuetify Admin</th>
+<th>Xtreme Vuesax Pro</th>
+<th>AdminPro Vuetify Dashboard</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+  <a href="https://www.wrappixel.com/templates/materialpro-vuetify-admin/" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/05/materialpro-vuejs-dashboard-template-20.jpg" alt="MaterialPro Vuetify Admin" style="max-width:150px;">
+  </a>
+</td>
+<td>
+  <a href="https://www.wrappixel.com/templates/xtreme-vuesax-admin-pro/" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/xtreme-vuesax-admin-y.jpg" alt="Xtreme Vuesax Admin" style="max-width:150px;">
+  </a>
+</td>
+<td>
+  <a href="https://www.wrappixel.com/templates/adminpro-vuetify-dashboard/" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/10/adminpro-vuetify-dasboard-template-y.jpg" alt="AdminPro Vuetify Dashboard" style="max-width:150px;">
+  </a>
+</td>
+</tr>
+</tbody>
+</table>
 
-analytics:
-  vendors:
-    googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
+<!-- Licensing of Template -->
+<h2>Licensing</h2>
+<ul>
+  <li>
+    <p>Copyright 2021 Wrappixel (<a href="https://www.wrappixel.com/" rel="nofollow">https://www.wrappixel.com/</a>)</p>
+  </li>
+  <li>
+    <p>Licensed under MIT (<a href="https://www.wrappixel.com/license/">https://www.wrappixel.com/license/</a>)</p>
+  </li>
+</ul>
 
-ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
-```
 
-<br>
+<!-- ## License -->
 
-### Deploy
+## The WrapPixel Advantage: Unlimited updates and dedicated support
 
-#### Deploy to production (manual)
+<ul>
+<li>Once you purchase a WrapPixel's template you can rest easy knowing that you'll be entitled to a free download of all our future updates for lifetime.</li>
+</li>Our dedicated support team is at your service for any queries or clarifications. Simply send us your query at https://www.wrappixel.com/support/ for quick resolution of your concerns.</li>
+</ul>
 
-You can create an optimized production build with:
+<!-- Useful Links of Template -->
+<h2>Useful Links</h2>
+<ul>
+<li><a href="https://www.wrappixel.com/templates/category/admin-template/">Dashboard Templates</a> from WrapPixel</li>
+<li><a href="https://www.wrappixel.com/">Bootstrap 4 Themes</a> from WrapPixel</li>
+<li><a href="https://www.wrappixel.com/templates/category/bootstrap-admin-templates/">Bootstrap Dashboard</a> from WrapPixel</li>
+<li><a href="https://www.wrappixel.com/templates/category/react-templates/">React Themes</a> from WrapPixel</li>
+<li><a href="https://www.wrappixel.com/templates/category/vuejs-templates/">Vuejs Templates</a> from WrapPixel</li>
+<li><a href="https://www.wrappixel.com/templates/category/angular-templates/">Angular Themes</a> from WrapPixel</li>
+<li><a href="https://www.wrappixel.com/templates/category/free-templates/">Freebies</a> from WrapPixel</li>
+</ul>
 
-```shell
-npm run build
-```
-
-Now, your website is ready to be deployed. All generated files are located at
-`dist` folder, which you can deploy the folder to any hosting service you
-prefer.
-
-#### Deploy to Netlify
-
-Clone this repository on own GitHub account and deploy to Netlify:
-
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/onwidget/astrowind)
-
-#### Deploy to Vercel
-
-Clone this repository on own GitHub account and deploy to Vercel:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonwidget%2Fastrowind)
-
-<br>
-
-## Frequently Asked Questions
-
-- Why?
--
--
-
-<br>
-
-## Related projects
-
-- [TailNext](https://tailnext.vercel.app/) - Free template using Next.js 13 and Tailwind CSS with the new App Router.
-- [Qwind](https://qwind.pages.dev/) - Free template to make your website using Qwik + Tailwind CSS.
-
-## Contributing
-
-If you have any idea, suggestions or find any bugs, feel free to open a discussion, an issue or create a pull request.
-That would be very useful for all of us and we would be happy to listen and take action.
-
-## Acknowledgements
-
-Initially created by [onWidget](https://onwidget.com) and maintained by a community of [contributors](https://github.com/onwidget/astrowind/graphs/contributors).
-
-## License
-
-**AstroWind** is licensed under the MIT license — see the [LICENSE](./LICENSE.md) file for details.
+<!-- Social Media of Wrappixel -->
+<h2>Social Media</h2>
+<p>Facebook: <a href="https://www.facebook.com/wrappixel">https://www.facebook.com/wrappixel</a></p>
+<p>Twitter: <a href="https://twitter.com/wrappixel">https://twitter.com/wrappixel</a></p>
+<p>Medium: <a href="https://medium.com/wrappixel">https://medium.com/wrappixel</a></p>

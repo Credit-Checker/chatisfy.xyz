@@ -1,0 +1,43 @@
+.team-card {
+  .team-subtitle {
+    font-size: 13px;
+  }
+  .social-overlay {
+    position: relative;
+    .img-overlay {
+      background: rgba(26, 139, 243, 0.87);
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 6px;
+      left: 0;
+      padding: 1.25rem;
+      border-radius: calc(0.25rem - 1px);
+      ul {
+        position: relative;
+        top: 50%;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding-left: 0;
+        li {
+          a {
+            color: rgb(var(--v-theme-white));
+            transition: 0.2s ease-in;
+            padding: 0 10px;
+            display: block;
+            &:hover {
+              transform: translate3d(0px, -5px, 0px);
+            }
+          }
+        }
+      }
+    }
+    &:hover {
+      .img-overlay {
+        display: block;
+      }
+    }
+  }
+}
